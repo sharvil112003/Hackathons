@@ -39,7 +39,7 @@ $result = mysqli_query($con, $query);
           <a class="nav-link" href="about.html ">About</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="about.html ">Events </a>
+          <a class="nav-link" href="events.php ">Events </a>
         </li>
       </ul>
     </div>
