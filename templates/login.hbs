@@ -26,8 +26,9 @@
     .container1{
       padding: 7vh;
       margin-top:-1vh;
-
     }
+
+    
 
   </style>
   <div class="container">
@@ -47,6 +48,22 @@
 <p>Don't have an account yet? <a href="/signup"><button class="button1">Sign up</button></a>.</p>
 </div>
   </div>
+
+  <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      fetch('/login', {
+        method: 'POST',
+        body: new FormData(form)
+      })
+      .then(response => {
+        if (response.ok) {
+          window.location.href = '/home';
+        }
+      });
+    });
+  </script>
     
 </body>
 </html>
