@@ -33,6 +33,10 @@
           <a class="nav-link" href="events.php ">Events </a>
         </li>
       </ul>
+      <div class="chat">
+      <img id="chat-icon" style="width:5vh;height:5vh;color:white;" src="images/chat1.png" >
+
+      </div>
     </div>
   </nav>
 
@@ -77,6 +81,13 @@
 </div>
 
 </div>
+
+<script>
+  document.getElementById('chat-icon').addEventListener('click', function() {
+    // Open the chat application
+    window.open('http://127.0.0.1:5500/Chat/Chat-Application-Socket.io/index.html', '_blank', 'width=500,height=500');
+});
+</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
