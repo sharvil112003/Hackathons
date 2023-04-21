@@ -37,6 +37,7 @@
       <img id="chat-icon" style="width:5vh;height:5vh;color:white;" src="images/chat1.png" >
 
       </div>
+      <a class="btn btn-primary" href="login.php" role="button">logout</a>
     </div>
   </nav>
 
